@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background_river_color" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="83dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="240dp"
+        app:srcCompat="@drawable/water_pollution" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/air_pollution" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="124dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="470dp"
+        app:srcCompat="@drawable/ground_pollution" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/alien" />
+
+    <ImageView
+        android:id="@+id/alien2"
+        android:layout_width="50dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="240dp"
+        app:srcCompat="@drawable/alien" />
+
+    <ImageView
+        android:id="@+id/alien3"
+        android:layout_width="50dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="300dp"
+        app:srcCompat="@drawable/alien" />
+
+    <ImageView
+        android:id="@+id/alien4"
+        android:layout_width="50dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="400dp"
+        app:srcCompat="@drawable/alien" />
+</FrameLayout>
