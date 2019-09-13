@@ -2,4 +2,6 @@
 <resources>
     <dimen name="title_size">30sp</dimen>
     <dimen name="vertical_spacing">30dp</dimen>
+    <dimen name="wall_distance">50dp</dimen>
+    <dimen name="spinner_width">200dp</dimen>
 </resources>

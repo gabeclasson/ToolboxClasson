@@ -2,4 +2,18 @@
     <string name="app_name">Pollution</string>
     <string name="display_title">Pollution Visualizer</string>
     <string name="switch_text">River scene</string>
+    <string name="check_air_text">Air pollution</string>
+    <string name="check_water_text">Water pollution</string>
+    <string name="check_land_text">Land pollution</string>
+    <string name="radio_human_text">Humans</string>
+    <string name="radio_pig_text">Pigs</string>
+    <string name="radio_alien_text">Aliens</string>
+    <string-array name="color_options">
+        <item>Full color</item>
+        <item>Black and white</item>
+        <item>Green</item>
+    </string-array>
+    <string name="inhabitant_header">Scene inhabitants</string>
+    <string name="pollution_header">Pollution types</string>
+    <string name="color_header">Scene color options</string>
 </resources>
