@@ -8,14 +8,14 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/background_river_color" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/waterPollution"
         android:layout_width="83dp"
         android:layout_height="181dp"
         android:layout_marginStart="270dp"
@@ -23,7 +23,7 @@
         app:srcCompat="@drawable/water_pollution" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/airPollution"
         android:layout_width="70dp"
         android:layout_height="146dp"
         android:layout_marginStart="270dp"
@@ -31,7 +31,7 @@
         app:srcCompat="@drawable/air_pollution" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/landPollution"
         android:layout_width="124dp"
         android:layout_height="78dp"
         android:layout_marginStart="270dp"
@@ -39,7 +39,7 @@
         app:srcCompat="@drawable/ground_pollution" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/alien1"
         android:layout_width="50dp"
         android:layout_height="83dp"
         android:layout_marginStart="145dp"

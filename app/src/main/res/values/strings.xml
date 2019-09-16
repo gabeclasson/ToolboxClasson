@@ -16,4 +16,5 @@
     <string name="inhabitant_header">Scene inhabitants</string>
     <string name="pollution_header">Pollution types</string>
     <string name="color_header">Scene color options</string>
+    <string name="error_message">Please fill in all fields correctly.</string>
 </resources>
