@@ -42,14 +42,20 @@ public class MainActivity extends AppCompatActivity {
             CheckBox water = findViewById(R.id.checkWater);
             CheckBox land = findViewById(R.id.checkLand);
             RadioGroup inhabitants = findViewById(R.id.radioGroup);
-            String selectedInhabitant = ((RadioButton) findViewById(inhabitants.getCheckedRadioButtonId())).getText().toString();
-            int inhabitantOption = -1;
-            if (selectedInhabitant.equals(getString(R.string.radio_human_text)))
-                inhabitantOption = DisplayActivity.HUMAN;
-            else if (selectedInhabitant.equals(getString(R.string.radio_alien_text)))
-                inhabitantOption = DisplayActivity.ALIEN;
-            else if (selectedInhabitant.equals(getString(R.string.radio_pig_text)))
-                inhabitantOption = DisplayActivity.PIG;
+            int inhabitantOption;
+            if (inhabitants.getCheckedRadioButtonId() != -1){
+                String selectedInhabitant = ((RadioButton) findViewById(inhabitants.getCheckedRadioButtonId())).getText().toString();
+                inhabitantOption = -1;
+                if (selectedInhabitant.equals(getString(R.string.radio_human_text)))
+                    inhabitantOption = DisplayActivity.HUMAN;
+                else if (selectedInhabitant.equals(getString(R.string.radio_alien_text)))
+                    inhabitantOption = DisplayActivity.ALIEN;
+                else if (selectedInhabitant.equals(getString(R.string.radio_pig_text)))
+                    inhabitantOption = DisplayActivity.PIG;
+            }
+            else {
+                inhabitantOption = -1;
+            }
             Spinner colorScene = findViewById(R.id.colorSpinner);
             String colorOfScene = colorScene.getSelectedItem().toString();
             String[] colorsArray = getResources().getStringArray(R.array.color_options);

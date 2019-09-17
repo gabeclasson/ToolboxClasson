@@ -56,18 +56,41 @@ public class DisplayActivity extends AppCompatActivity {
         ImageView inhabitant3 = findViewById(R.id.alien3);
         ImageView inhabitant4 = findViewById(R.id.alien4);
         int imageId = 0;
+        boolean hasInhabitant = true;
         if (inhabitant == HUMAN)
             imageId = R.drawable.person;
         else if (inhabitant == ALIEN)
             imageId = R.drawable.alien;
         else if (inhabitant == PIG)
             imageId = R.drawable.pig;
-        else
+        else {
+            hasInhabitant = false;
             imageId = R.drawable.person;
-        inhabitant1.setImageResource(imageId);
-        inhabitant2.setImageResource(imageId);
-        inhabitant3.setImageResource(imageId);
-        inhabitant4.setImageResource(imageId);
+            inhabitant1.setVisibility(View.INVISIBLE);
+            inhabitant2.setVisibility(View.INVISIBLE);
+            inhabitant3.setVisibility(View.INVISIBLE);
+            inhabitant4.setVisibility(View.INVISIBLE);
+        }
+        if (hasInhabitant) {
+            inhabitant1.setImageResource(imageId);
+            inhabitant2.setImageResource(imageId);
+            inhabitant3.setImageResource(imageId);
+            inhabitant4.setImageResource(imageId);
+        }
+        ImageView background = findViewById(R.id.background);
+        if (!sceneIsOn){
+            background.setVisibility(View.INVISIBLE);
+        }
+        else{
+            if (colorScheme == FULL_COLOR)
+                background.setImageResource(R.drawable.background_river_color);
+            else if (colorScheme == GREEN)
+                background.setImageResource(R.drawable.background_river_green);
+            else if (colorScheme == BLACK_WHITE)
+                background.setImageResource(R.drawable.background_river_mono);
+            else
+                background.setImageResource(R.drawable.background_river_color);
+        }
     }
 
 }
